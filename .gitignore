@@ -1,0 +1,15 @@
+/elpa/
+backup.d/
+save.d/
+semanticdb/
+auto-save-list/
+ac-comphist.dat
+projectile.cache
+projectile-bookmarks.eld
+ede-projects.el
+.session
+*~
+*.elc
+*.pyc
+*.swp
+
