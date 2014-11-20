@@ -6,8 +6,6 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
 
-;; install packages listed in packages.list
-
 (defun install-packages ()
   "Install all required packages listed in packages.list."
   (interactive)
@@ -26,6 +24,7 @@
               (package-install my-pkg-sym))))
         (message "package installation done.")))))
 
+;; install packages listed in packages.list
 (install-packages)
 
 ;; startup setting
@@ -34,7 +33,11 @@
 ;; make frame full-screen on startup
 (custom-set-variables '(initial-frame-alist '((fullscreen . maximized))))
 
-(add-to-list 'load-path (concat user-emacs-directory "site-lisp/"))
+;; set load path
+(let* ((my-site-lisp-dir (concat user-emacs-directory "site-lisp/"))
+       (default-directory my-site-lisp-dir))
+  (add-to-list 'load-path my-site-lisp-dir)
+  (normal-top-level-add-subdirs-to-load-path))
 (defvar user-custom-dir (concat user-emacs-directory "custom/"))
 (add-to-list 'load-path user-custom-dir)
 (add-to-list 'load-path (concat user-custom-dir "package-config"))

@@ -8,7 +8,7 @@
  '(column-number-mode t)
  '(custom-enabled-themes (quote (zenburn)))
  '(custom-safe-themes (quote ("9dae95cdbed1505d45322ef8b5aa90ccb6cb59e0ff26fef0b8f411dfc416c552" default)))
- '(ede-project-directories (quote ("/home/wilbur/projects/cpp11-examples")))
+ '(ede-project-directories (quote ("/media/e/projects/IMCS-NEW/src/NetWorkHost" "/home/wilbur/projects/cpp11-examples")))
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(save-place t nil (saveplace))
  '(session-use-package t nil (session))

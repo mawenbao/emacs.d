@@ -5,8 +5,7 @@
 (global-semanticdb-minor-mode 1)
 (global-semantic-idle-scheduler-mode 1)
 (global-semantic-stickyfunc-mode 1)
-(global-semantic-idle-completions-mode 1)
-(global-semantic-idle-summary-mode 1)
+;; (global-semantic-idle-summary-mode 1)
 
 (semantic-mode 1)
 
@@ -18,6 +17,10 @@
 (add-hook 'c-mode-hook 'alexott/cedet-hook)
 (add-hook 'c++-mode-hook 'alexott/cedet-hook)
 
-;; Enable EDE only in C/C++
 (require 'ede)
 (global-ede-mode)
+
+;; load my custom ede projects config
+(let ((my-ede-projects-file (concat my-save-directory "my-ede-projects.el")))
+  (if (file-exists-p my-ede-projects-file)
+      (load-file my-ede-projects-file)))
