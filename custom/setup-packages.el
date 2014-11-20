@@ -9,9 +9,10 @@
 (require 'setup-company)
 (require 'setup-projectile)
 (require 'setup-yasnippet)
+(require 'setup-auto-complete)
+;; (require 'setup-session)
 
 (require 'go-autocomplete)
-(require 'auto-complete-config)
 
 (require 'saveplace)
 (toggle-save-place-globally 1)
@@ -61,9 +62,3 @@
 ;; package duplicate-thing
 (require 'duplicate-thing)
 
-;; package session
-(require 'session)
-(add-hook 'after-init-hook 'session-initialize)
-(add-to-list 'session-globals-exclude 'org-mark-ring)
-(setq session-save-print-spec '(t nil 40000))
-;; misc package settings
