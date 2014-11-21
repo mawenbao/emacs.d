@@ -18,7 +18,7 @@
     重启emacs
 
 ## 依赖
-当前配置仅适用于GNU/Linux操作系统，且需要Emacs24+。
+当前配置仅适用于Emacs24+，已在Linux和Win7上测试过。
 
 为了支持go-mode下的自动补全，需要安装gocode
 
@@ -29,6 +29,8 @@
     # jedi的版本可能有更新，目录名称里的时间可能不是这个
     cd ~/.emacs.d/elpa/jedi-20140321.1323
     sudo python setup.py install
+
+在Windows系统上使用时，建议运行`python tool/install-emacs-registry.py`安装下Emacs的注册表配置。
 
 ## 目录结构说明
 
