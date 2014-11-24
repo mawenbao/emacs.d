@@ -45,3 +45,6 @@
 
 ;; package duplicate thing
 (global-set-key (kbd "M-c") 'duplicate-thing)
+
+;; keybindings for custom functions
+(global-set-key [f6] 'toggle-selective-display)

@@ -1,11 +1,9 @@
 anzu
 async
 popup
-auto-complete
 bookmark+
 clean-aindent-mode
 comment-dwim-2
-company
 go-mode
 go-eldoc
 company-go
@@ -32,7 +30,6 @@ helm-swoop
 iedit
 python-environment
 jedi
-session
 smartparens
 sml-mode
 undo-tree
@@ -42,3 +39,6 @@ yasnippet
 zygospore
 markdown-mode
 zenburn-theme
+session
+auto-complete
+company
