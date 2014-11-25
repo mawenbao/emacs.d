@@ -8,7 +8,7 @@
 
     git clone https://github.com/mawenbao/emacs.d ~/.emacs.d
 
-初次启动需要安装各种package，需要等一会。
+初次启动需要安装各种package，需要等一会，安装完成后最好重启下emacs。
 
 每次安装package后建议手动运行下`sh tool/gen-package-list.sh`，将已安装的package名称记录到packages.list里，以后迁移的时候即可自动安装。
 
