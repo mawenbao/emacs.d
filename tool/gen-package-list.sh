@@ -8,7 +8,8 @@ cd ${USER_EMACS_DIR}
 
 find elpa/* -maxdepth 0 -type d |
     grep -v '^elpa/archives$' |
-    xargs ls -1dtr |
+    #xargs ls -1dtr |
+    sort |
     sed 's|^elpa/||' |
     rev |
     cut -d '-' -f 2- |
