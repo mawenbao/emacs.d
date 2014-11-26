@@ -12,17 +12,10 @@
 
 每次安装package后建议手动运行下`sh tool/gen-package-list.sh`，将已安装的package名称记录到packages.list里，以后迁移的时候即可自动安装。
 
-### 安装错误
-1. Trying to parse HTTP response code in odd buffer
-
-    重启emacs
-
 ## 依赖
 当前配置仅适用于Emacs24+，已在Linux和Win7上测试过。
 
-为了使用helm-gtags，需要安装`global`(Debian/Ubuntu)
-
-    sudo apt-get install global
+为了使用helm-gtags，需要安装`global`，需要注意的是Debian/Ubuntu上的global包太过老旧，请自行下载安装global-6.2.3+版本。
 
 为了支持go-mode下的自动补全，需要安装gocode
 
@@ -53,3 +46,13 @@
 * packages.list 记录已安装的package名称，由`tool/gen-package-list.sh`自动生成
 * tool/         各种工具
     * gen-package-list.sh   更新已安装的package列表
+
+## 各种错误
+1. 安装时报错: Trying to parse HTTP response code in odd buffer
+
+    解决方法是重启emacs
+
+2. `helm-gtags-update-tags`报错: Failed: update TAGS
+
+    升级global至6.2.3+版本
+
