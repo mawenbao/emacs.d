@@ -20,6 +20,10 @@
 ## 依赖
 当前配置仅适用于Emacs24+，已在Linux和Win7上测试过。
 
+为了使用helm-gtags，需要安装`global`(Debian/Ubuntu)
+
+    sudo apt-get install global
+
 为了支持go-mode下的自动补全，需要安装gocode
 
     go get -u github.com/nsf/gocode
