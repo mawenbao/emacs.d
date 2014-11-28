@@ -72,7 +72,7 @@
 (require 'helm-swoop)
 
 ;; Change the keybinds to whatever you like :)
-(global-set-key (kbd "C-c h o") 'helm-swoop)
+;; (global-set-key (kbd "C-c h o") 'helm-swoop)
 (global-set-key (kbd "C-c s") 'helm-multi-swoop-all)
 
 ;; When doing isearch, hand the word over to helm-swoop

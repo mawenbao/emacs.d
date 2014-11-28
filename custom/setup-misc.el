@@ -24,6 +24,7 @@
 (setq session-save-file (concat my-save-directory "emacs.session"))
 (setq tramp-persistency-file-name (concat my-save-directory "tramp-conn-history"))
 (setq save-place-file (concat my-save-directory "save-places.el"))
+(setq eshell-directory-name (concat my-save-directory "eshell/"))
 
 ;; backup config(no backups)
 (setq make-backup-files nil)
