@@ -22,6 +22,7 @@
 (setq ac-comphist-file (concat my-save-directory "ac-comphist.dat"))
 (setq auto-save-list-file-prefix (concat my-save-directory "auto-save-list-"))
 (setq session-save-file (concat my-save-directory "emacs.session"))
+(setq tramp-persistency-file-name (concat my-save-directory "tramp-conn-history"))
 
 ;; backup config(no backups)
 (setq make-backup-files nil)

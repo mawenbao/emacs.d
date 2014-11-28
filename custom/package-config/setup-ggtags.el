@@ -13,4 +13,4 @@
 
 (define-key ggtags-mode-map (kbd "M-,") 'pop-tag-mark)
 
-(provide 'setup-package-ggtags)
+(provide 'setup-ggtags)

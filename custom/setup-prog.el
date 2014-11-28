@@ -12,7 +12,7 @@ n
 ;; set style to "linux"
 (setq c-default-style "linux")
 
-(add-hook 'c-mode-common-hook 'outline-minor-mode)
+(add-hook 'c-mode-common-hook 'hs-minor-mode)
 (add-hook 'prog-mode-hook (lambda () (interactive) (setq show-trailing-whitespace 1)))
 
 (setq-default indent-tabs-mode nil)

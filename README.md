@@ -15,7 +15,7 @@
 ## 依赖
 当前配置仅适用于Emacs24+，已在Linux和Win7上测试过。
 
-为了使用helm-gtags，需要安装`global`，需要注意的是Debian/Ubuntu上的global包太过老旧，请自行下载安装global-6.2.3+版本。
+为了使用helm-gtags，需要安装`global`，需要注意的是Debian/Ubuntu上的global包太过老旧，请自行[下载](http://www.gnu.org/software/global/download.html)安装global-6.2.3+版本。
 
 为了支持go-mode下的自动补全，需要安装gocode
 
@@ -54,5 +54,5 @@
 
 2. `helm-gtags-update-tags`报错: Failed: update TAGS
 
-    升级global至6.2.3+版本
+    升级global至6.2.3+版本，然后运行<kbd>M-x helm-gtags-create-tags</kbd>
 
