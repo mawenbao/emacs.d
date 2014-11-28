@@ -12,6 +12,7 @@
 (require 'setup-auto-complete)
 (require 'setup-tramp)
 ;; (require 'setup-session)
+(require 'setup-saveplace)
 
 (require 'go-autocomplete)
 
