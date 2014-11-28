@@ -10,6 +10,7 @@
 (require 'setup-projectile)
 (require 'setup-yasnippet)
 (require 'setup-auto-complete)
+(require 'setup-tramp)
 ;; (require 'setup-session)
 
 (require 'go-autocomplete)
