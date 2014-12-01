@@ -50,5 +50,3 @@
 (require 'setup-packages)
 (require 'setup-prog)
 (require 'setup-keys)
-
-(require 'setup-saveplace)
