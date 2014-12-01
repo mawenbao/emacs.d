@@ -1,10 +1,12 @@
 anzu
 async
 auto-complete
+better-registers
 bookmark+
 clean-aindent-mode
 comment-dwim-2
 company
+company-c-headers
 company-go
 concurrent
 ctable

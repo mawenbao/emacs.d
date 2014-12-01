@@ -16,9 +16,6 @@
 
 (require 'go-autocomplete)
 
-(require 'saveplace)
-(toggle-save-place-globally 1)
-
 (require 'function-args)
 (fa-config-default)
 (require 'bookmark+)

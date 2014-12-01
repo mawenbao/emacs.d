@@ -18,8 +18,8 @@
 ;; custom function key bindings
 (global-set-key (kbd "C-a") 'prelude-move-beginning-of-line)
 (global-set-key (kbd "C-c i") 'indent-region-or-buffer)
+(global-set-key (kbd "C-o") 'prelude-smart-open-line-above)
 (global-set-key (kbd "M-o") 'prelude-smart-open-line)
-(global-set-key (kbd "M-o") 'open-line)
 
 ;; package comment-dwim-2
 (global-set-key (kbd "M-;") 'comment-dwim-2)
@@ -31,10 +31,9 @@
 (define-key yas-keymap (kbd "<return>") 'yas/exit-all-snippets)
 (define-key yas-keymap (kbd "C-e") 'yas/goto-end-of-active-field)
 (define-key yas-keymap (kbd "C-a") 'yas/goto-start-of-active-field)
-;; (define-key yas-minor-mode-map [(tab)] nil)
-;; (define-key yas-minor-mode-map (kbd "TAB") nil)
-;; (define-key yas-minor-mode-map (kbd "C-<tab>") 'yas-expand)
-;; No dropdowns please, yas
+;; disable yasnippet's TAB keybinging
+(define-key yas-minor-mode-map [(tab)] nil)
+(define-key yas-minor-mode-map (kbd "TAB") nil)
 
 ;; package anzu
 (global-set-key (kbd "M-%") 'anzu-query-replace)

@@ -1,34 +1,3 @@
-(defconst demo-packages
-  '(anzu
-    company
-    duplicate-thing
-    ggtags
-    helm
-    helm-gtags
-    helm-swoop
-    function-args
-    clean-aindent-mode
-    comment-dwim-2
-    dtrt-indent
-    ws-butler
-    iedit
-    yasnippet
-    smartparens
-    sml-mode
-    projectile
-    volatile-highlights
-    undo-tree
-    zygospore))
-
-(defun install-packages ()
-  "Install all required packages."
-  (interactive)
-  (unless package-archive-contents
-    (package-refresh-contents))
-  (dolist (package demo-packages)
-    (unless (package-installed-p package)
-      (package-install package))))
-
 (defun prelude-move-beginning-of-line (arg)
   "Move point back to indentation of beginning of line.
 
