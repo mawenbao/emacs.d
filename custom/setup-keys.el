@@ -11,9 +11,6 @@
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 (global-set-key (kbd "C-c /") 'ac-complete-filename)
 
-(define-key c-mode-map  [(tab)] 'moo-complete)
-(define-key c++-mode-map  [(tab)] 'moo-complete)
-
 ;; custom function key bindings
 (global-set-key (kbd "C-a") 'prelude-move-beginning-of-line)
 (global-set-key (kbd "C-c i") 'indent-region-or-buffer)
