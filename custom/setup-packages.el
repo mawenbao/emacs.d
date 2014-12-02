@@ -16,8 +16,6 @@
 
 (require 'go-autocomplete)
 
-(require 'function-args)
-(fa-config-default)
 (require 'bookmark+)
 (require 'dired+)
 (require 'clean-aindent-mode)

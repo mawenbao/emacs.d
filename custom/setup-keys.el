@@ -1,7 +1,6 @@
 (provide 'setup-keys)
 
 (windmove-default-keybindings)
-(fa-config-default)
 
 ;; comilation
 (global-set-key (kbd "<f5>") (lambda ()
