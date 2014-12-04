@@ -21,6 +21,7 @@ ggtags
 go-eldoc
 golden-ratio
 go-mode
+google-c-style
 helm
 helm-gtags
 helm-projectile

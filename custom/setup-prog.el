@@ -10,7 +10,7 @@ n
  )
 
 ;; set style to "linux"
-(setq c-default-style "linux")
+(setq c-default-style "Google")
 
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
 (add-hook 'prog-mode-hook (lambda () (interactive) (setq show-trailing-whitespace 1)))

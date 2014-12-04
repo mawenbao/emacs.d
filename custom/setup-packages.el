@@ -16,6 +16,9 @@
 
 (require 'go-autocomplete)
 
+(require 'google-c-style)
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+
 (require 'bookmark+)
 (require 'dired+)
 (require 'clean-aindent-mode)
