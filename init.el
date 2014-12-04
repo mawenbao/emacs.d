@@ -42,9 +42,6 @@
 (add-to-list 'load-path user-custom-dir)
 (add-to-list 'load-path (concat user-custom-dir "package-config"))
 (load-file (concat user-custom-dir "custom-funcs.el"))
-(setq custom-file (concat user-custom-dir "custom-save.el"))
-(if (file-exists-p custom-file)
-    (load-file custom-file))
 
 (require 'setup-misc)
 (require 'setup-packages)

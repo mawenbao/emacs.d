@@ -6,6 +6,13 @@
 (global-font-lock-mode t)
 (transient-mark-mode t)
 
+;; my own config
+(defvar my-config-directory (concat user-emacs-directory "my-config/"))
+(setq gui-config-save-file (concat my-config-directory "gui-config-save.el"))
+(if (file-exists-p gui-config-save-file)
+    (load-file gui-config-save-file))
+(setq yas-snippet-dirs (list (concat my-config-directory "yasnippets/") 'yas-installed-snippets-dir))
+
 ;; save place
 (defvar my-save-directory (concat user-emacs-directory "save.d/"))
 (if (not (file-exists-p my-save-directory))

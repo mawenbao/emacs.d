@@ -21,6 +21,6 @@
 (global-ede-mode)
 
 ;; load my custom ede projects config
-(let ((my-ede-projects-file (concat my-save-directory "my-ede-projects.el")))
+(let ((my-ede-projects-file (concat my-config-directory "my-ede-projects.el")))
   (if (file-exists-p my-ede-projects-file)
       (load-file my-ede-projects-file)))
