@@ -1,5 +1,6 @@
 (provide 'setup-packages)
 
+(require 'setup-org-mode)
 (require 'setup-smartparens)
 (require 'setup-golden-ratio)
 (require 'setup-helm)

@@ -30,6 +30,7 @@ helm-swoop
 iedit
 jedi
 markdown-mode
+org
 pkg-info
 popup
 projectile
