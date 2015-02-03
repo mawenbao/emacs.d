@@ -13,7 +13,7 @@
     (load-file gui-config-save-file))
 (setq yas-snippet-dirs (list (concat my-config-directory "yasnippets/") 'yas-installed-snippets-dir))
 
-;; save place
+;; save place, ~/.emacs.d/save.d
 (defvar my-save-directory (concat user-emacs-directory "save.d/"))
 (if (not (file-exists-p my-save-directory))
     (make-directory my-save-directory t))
@@ -32,6 +32,10 @@
 (setq tramp-persistency-file-name (concat my-save-directory "tramp-conn-history"))
 (setq save-place-file (concat my-save-directory "save-places.el"))
 (setq eshell-directory-name (concat my-save-directory "eshell/"))
+
+;; custom data directory, ~/.emacs.d/my-data
+(defvar my-data-directory (concat user-emacs-directory "my-data/"))
+(setq org-agenda-files (list (concat my-data-directory "org-files/")))
 
 ;; backup config(no backups)
 (setq make-backup-files nil)
