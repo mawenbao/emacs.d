@@ -43,3 +43,6 @@
 
 ;; keybindings for custom functions
 (global-set-key [f6] 'toggle-selective-display)
+
+;; org-mode keybindings
+(global-set-key [f12] 'org-agenda)

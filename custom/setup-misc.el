@@ -35,7 +35,7 @@
 
 ;; custom data directory, ~/.emacs.d/my-data
 (defvar my-data-directory (concat user-emacs-directory "my-data/"))
-(setq org-agenda-files (list (concat my-data-directory "org-files/")))
+(setq org-agenda-files (list (concat my-data-directory "org-files/2015/")))
 
 ;; backup config(no backups)
 (setq make-backup-files nil)

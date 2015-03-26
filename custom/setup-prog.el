@@ -22,3 +22,6 @@ n
 ;; python
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
+
+;; c/cpp style
+(setq c-default-style "stroustrup")
