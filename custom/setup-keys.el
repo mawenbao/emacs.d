@@ -10,6 +10,7 @@
 (global-set-key (kbd "RET") 'newline-and-indent)
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 (global-set-key (kbd "C-c /") 'ac-complete-filename)
+(global-set-key [(control tab)] 'company-complete)
 
 ;; custom function key bindings
 (global-set-key (kbd "C-a") 'prelude-move-beginning-of-line)
