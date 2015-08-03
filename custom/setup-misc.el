@@ -5,12 +5,15 @@
 (global-linum-mode t)
 (global-font-lock-mode t)
 (transient-mark-mode t)
+(global-auto-revert-mode t)
 
 ;; my own config
 (defvar my-config-directory (concat user-emacs-directory "my-config/"))
-(setq gui-config-save-file (concat my-config-directory "gui-config-save.el"))
-(if (file-exists-p gui-config-save-file)
-    (load-file gui-config-save-file))
+(if (not (file-exists-p my-config-directory))
+    (make-directory my-config-directory t))
+(setq custom-file (concat my-config-directory "gui-config-save.el"))
+(if (file-exists-p custom-file)
+    (load-file custom-file))
 (setq yas-snippet-dirs (list (concat my-config-directory "yasnippets/") 'yas-installed-snippets-dir))
 
 ;; save place, ~/.emacs.d/save.d
@@ -35,6 +38,8 @@
 
 ;; custom data directory, ~/.emacs.d/my-data
 (defvar my-data-directory (concat user-emacs-directory "my-data/"))
+(if (not (file-exists-p my-data-directory))
+    (make-directory my-data-directory t))
 (setq org-agenda-files (list (concat my-data-directory "org-files/2015/")))
 
 ;; backup config(no backups)
