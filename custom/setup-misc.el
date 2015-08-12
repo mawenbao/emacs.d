@@ -5,7 +5,6 @@
 (global-linum-mode t)
 (global-font-lock-mode t)
 (transient-mark-mode t)
-(global-auto-revert-mode t)
 
 ;; my own config
 (defvar my-config-directory (concat user-emacs-directory "my-config/"))
