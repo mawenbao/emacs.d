@@ -31,6 +31,7 @@
 ;; disable yasnippet's TAB keybinging
 (define-key yas-minor-mode-map [(tab)] nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
+(define-key yas-minor-mode-map (kbd "M-p") 'yas-expand)
 
 ;; package anzu
 (global-set-key (kbd "M-%") 'anzu-query-replace)
