@@ -24,7 +24,6 @@ go-mode
 helm
 helm-gtags
 helm-projectile
-helm-projectile-all
 helm-swoop
 hexrgb
 iedit
@@ -39,7 +38,6 @@ python-environment
 s
 session
 smartparens
-sml-mode
 undo-tree
 volatile-highlights
 ws-butler

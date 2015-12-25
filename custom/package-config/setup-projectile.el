@@ -2,7 +2,7 @@
 
 (require 'projectile)
 (require 'helm-projectile)
-(require 'helm-projectile-all)
+; (require 'helm-projectile-all)
 
 (projectile-global-mode)
 (setq projectile-enable-caching t)
