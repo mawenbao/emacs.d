@@ -1,3 +1,5 @@
+;; These functions were collected from internet
+
 (defun prelude-move-beginning-of-line (arg)
   "Move point back to indentation of beginning of line.
 
@@ -146,7 +148,8 @@ With a prefix ARG open line above the current line."
 Position the cursor at it's beginning, according to the current mode."
   (interactive)
   (move-beginning-of-line nil)
-  (newline-and-indent)
+  ;; (newline-and-indent)
+  (newline)
   (forward-line -1)
   (indent-according-to-mode))
 
