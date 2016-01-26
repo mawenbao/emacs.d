@@ -18,6 +18,7 @@
 (require 'go-autocomplete)
 
 (require 'bookmark+)
+(setq diredp-hide-details-initially-flag nil)
 (require 'dired+)
 (require 'clean-aindent-mode)
 (add-hook 'prog-mode-hook 'clean-aindent-mode)
