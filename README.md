@@ -24,7 +24,7 @@
 为了启用jedi，需要手动安装jedi
 
     # jedi的版本可能有更新，目录名称里的时间可能不是这个
-    cd ~/.emacs.d/elpa/jedi-20140321.1323
+    cd ~/.emacs.d/elpa/jedi-core-20140321.1323
     sudo python setup.py install
 
 在Windows系统上使用时，建议运行`python tool/install-emacs-registry.py`安装下Emacs的注册表配置。
