@@ -60,4 +60,3 @@
 
 ;; package duplicate-thing
 (require 'duplicate-thing)
-

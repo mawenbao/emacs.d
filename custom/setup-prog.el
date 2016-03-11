@@ -37,3 +37,14 @@ n
   (setq c-default-style "my-custom-style")
   (c-set-style "my-custom-style"))
 (add-hook 'c-mode-common-hook 'my-custom-cpp-style-hook)
+
+;; type script uses tide
+(add-hook 'typescript-mode-hook
+          (lambda ()
+            (tide-setup)
+            (flycheck-mode +1)
+            (setq flycheck-check-syntax-automatically '(save mode-enabled))
+            (eldoc-mode +1)
+            ;; company is an optional dependency. You have to
+            ;; install it separately via package-install
+            (company-mode-on)))
