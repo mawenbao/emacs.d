@@ -37,8 +37,10 @@ palette
 pkg-info
 popup
 projectile
+pug-mode
 python-environment
 s
+scss-mode
 seq
 session
 smartparens
