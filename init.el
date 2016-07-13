@@ -1,10 +1,7 @@
 ;; init config
 (require 'package)
-(add-to-list 'package-archives
-;;             '("melpa" . "http://melpa.org/packages/") t)
-             '("popkit" . "https://elpa.popkit.org/packages/") t)
-(when (< emacs-major-version 24)
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+                         ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (package-initialize)
 
 (defun install-packages ()
