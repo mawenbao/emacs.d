@@ -14,6 +14,7 @@
 (require 'setup-tramp)
 ;; (require 'setup-session)
 (require 'setup-saveplace)
+(require 'setup-web-mode)
 
 (require 'go-autocomplete)
 

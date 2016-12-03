@@ -48,6 +48,7 @@ tide
 typescript-mode
 undo-tree
 volatile-highlights
+web-mode
 ws-butler
 yaml-mode
 yasnippet

@@ -4,9 +4,13 @@
 # @desc: 列出elpa下的package并按mtime排序后写入packages.list
 
 USER_EMACS_DIR=`emacs --batch -Q --eval '(princ (file-truename user-emacs-directory))'`
+if [ ! -f ${USER_EMACS_DIR}/init.el ]; then
+    USER_EMACS_DIR=$APPDATA/.emacs.d
+fi
 cd ${USER_EMACS_DIR}
 
-find elpa/* -maxdepth 0 -type d |
+find elpa -maxdepth 1 -type d |
+    grep -v '^elpa$' |
     grep -v '^elpa/archives$' |
     #xargs ls -1dtr |
     sort |
