@@ -10,11 +10,12 @@ fi
 cd ${USER_EMACS_DIR}
 
 find elpa -maxdepth 1 -type d |
-    grep -v '^elpa$' |
-    grep -v '^elpa/archives$' |
     #xargs ls -1dtr |
     sort |
     sed 's|^elpa/||' |
+    grep -v '^elpa$' |
+    grep -v '^gnupg$' |
+    grep -v '^archives$' |
     rev |
     cut -d '-' -f 2- |
     rev > packages.list

@@ -16,6 +16,9 @@ n
 (setq-default c-basic-offset 4)
 (setq default-fill-column 85)
 
+;; js2 mode for js
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
 ;; golang
 (add-hook 'go-mode-hook 'auto-complete-mode)
 
