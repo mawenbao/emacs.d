@@ -4,7 +4,8 @@
 # @author: wilbur <wilbur.ma@qq.com>
 # @date: 2012.07.17
 
-import winreg, os, platform
+import _winreg as winreg
+import os, platform
 
 # emacs structure
 structure = "bin/emacs.exe"

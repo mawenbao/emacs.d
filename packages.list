@@ -41,7 +41,6 @@ projectile
 pug-mode
 python-environment
 rjsx-mode
-s
 scss-mode
 seq
 session
