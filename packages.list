@@ -4,6 +4,7 @@ auto-complete
 better-registers
 bookmark+
 clean-aindent-mode
+cmake-mode
 comment-dwim-2
 company
 company-c-headers
@@ -41,6 +42,9 @@ projectile
 pug-mode
 python-environment
 rjsx-mode
+rust-mode
+rust-playground
+s
 scss-mode
 seq
 session
@@ -49,6 +53,7 @@ tide
 typescript-mode
 undo-tree
 volatile-highlights
+web-mode
 web-mode
 ws-butler
 yaml-mode
