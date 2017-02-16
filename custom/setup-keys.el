@@ -2,7 +2,6 @@
 
 (windmove-default-keybindings)
 
-;; comilation
 (global-set-key (kbd "<f5>") (lambda ()
                                (interactive)
                                (setq-local compilation-read-command nil)
@@ -11,6 +10,7 @@
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 (global-set-key (kbd "C-c /") 'ac-complete-filename)
 (global-set-key [(control tab)] 'company-complete)
+(global-set-key (kbd "M-g") 'goto-line)
 
 ;; custom function key bindings
 (global-set-key (kbd "C-a") 'prelude-move-beginning-of-line)
