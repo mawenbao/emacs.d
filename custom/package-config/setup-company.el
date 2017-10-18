@@ -12,8 +12,8 @@
          company-dabbrev-code
          company-yasnippet
          company-semantic
-         company-cmake
-         company-gtags
-         company-abbrev
+         ;; company-cmake
+         ;; company-gtags
+         ;; company-abbrev
          )
         ))

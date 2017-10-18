@@ -21,6 +21,9 @@
 ;; js2 mode for js
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
+;; web mode for quicktemplate
+(add-to-list 'auto-mode-alist '("\\.qtpl\\'" . web-mode))
+
 ;; golang
 (add-hook 'go-mode-hook 'auto-complete-mode)
 

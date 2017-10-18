@@ -61,3 +61,6 @@
 
 ;; package duplicate-thing
 (require 'duplicate-thing)
+
+;; package web-mode
+(setq web-mode-auto-quote-style 2)
