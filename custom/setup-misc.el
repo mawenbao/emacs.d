@@ -1,5 +1,8 @@
 (provide 'setup-misc)
 
+;; auto reload
+(global-auto-revert-mode t)
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 (column-number-mode t)
 (global-linum-mode t)

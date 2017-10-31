@@ -64,3 +64,7 @@
 
 ;; package web-mode
 (setq web-mode-auto-quote-style 2)
+
+
+;; rust auto completion
+(require 'setup-racer)
