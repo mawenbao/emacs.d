@@ -14,4 +14,4 @@ ede-projects.el
 *.elc
 *.pyc
 *.swp
-
+.python-environments/

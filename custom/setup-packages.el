@@ -4,8 +4,8 @@
 (require 'setup-smartparens)
 (require 'setup-golden-ratio)
 (require 'setup-helm)
-(require 'setup-helm-gtags)
 ;; (require 'setup-ggtags)
+(require 'setup-helm-gtags)
 (require 'setup-cedet)
 (require 'setup-projectile)
 (require 'setup-yasnippet)
@@ -18,7 +18,7 @@
 
 (require 'go-autocomplete)
 
-(require 'bookmark+)
+;; (require 'bookmark+)
 (setq diredp-hide-details-initially-flag nil)
 (require 'dired+)
 (require 'clean-aindent-mode)
