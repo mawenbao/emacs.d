@@ -6,14 +6,28 @@
 (add-hook 'after-init-hook 'global-company-mode)
 
 (setq company-backends
-      '((company-files          ; files & directory
+      '((
+         company-semantic
          company-keywords       ; keywords
          company-capf
-         company-dabbrev-code
          company-yasnippet
-         company-semantic
+         company-files          ; files & directory
          ;; company-cmake
          ;; company-gtags
-         ;; company-abbrev
-         )
-        ))
+         company-abbrev
+         company-dabbrev-code
+        )))
+
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (setq-local company-backends (copy-sequence company-backends))
+            (add-to-list 'company-backends
+                         '(company-irony))
+            ))
+
+(add-hook 'rust-mode-hook
+          (lambda ()
+            (setq-local company-backends (copy-sequence company-backends))
+            (add-to-list 'company-backends
+                         '(company-racer))
+            ))

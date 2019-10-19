@@ -68,3 +68,5 @@
 
 ;; rust auto completion
 (require 'setup-racer)
+
+(require 'setup-irony)

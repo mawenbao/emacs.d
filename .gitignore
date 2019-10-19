@@ -1,6 +1,8 @@
 /my-config/
 /my-data/
 /elpa/
+/session.*
+/irony
 backup.d/
 save.d/
 semanticdb/

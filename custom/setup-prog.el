@@ -56,3 +56,6 @@
             ;; company is an optional dependency. You have to
             ;; install it separately via package-install
             (company-mode-on)))
+
+(add-hook 'rust-mode-hook #'racer-mode)
+(add-hook 'racer-mode-hook #'eldoc-mode)
