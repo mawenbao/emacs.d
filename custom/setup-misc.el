@@ -74,6 +74,12 @@
 (prefer-coding-system 'utf-8)
 (delete-selection-mode)
 
+(when (boundp 'w32-pipe-read-delay)
+  (setq w32-pipe-read-delay 0))
+;; Set the buffer size to 64K on Windows (from the original 4K)
+(when (boundp 'w32-pipe-buffer-size)
+  (setq irony-server-w32-pipe-buffer-size (* 64 1024)))
+
 (setq kill-ring-max 5000 ; increase kill-ring capacity
       kill-whole-line t  ; if NIL, kill whole line and move the next line up
       )

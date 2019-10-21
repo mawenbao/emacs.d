@@ -1,5 +1,7 @@
 (provide 'setup-packages)
 
+(require 'misc)
+
 (require 'setup-org-mode)
 (require 'setup-smartparens)
 (require 'setup-golden-ratio)

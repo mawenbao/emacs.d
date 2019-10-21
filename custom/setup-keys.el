@@ -12,6 +12,8 @@
 (global-set-key [(control tab)] 'company-complete)
 (global-set-key (kbd "M-g") 'goto-line)
 
+(global-set-key (kbd "C-M-c") 'copy-from-above-command)
+
 ;; custom function key bindings
 (global-set-key (kbd "C-a") 'prelude-move-beginning-of-line)
 (global-set-key (kbd "C-c i") 'indent-region-or-buffer)
