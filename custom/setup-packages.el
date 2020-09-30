@@ -18,8 +18,6 @@
 (require 'setup-saveplace)
 (require 'setup-web-mode)
 
-(require 'go-autocomplete)
-
 ;; (require 'bookmark+)
 (setq diredp-hide-details-initially-flag nil)
 (require 'dired+)

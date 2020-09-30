@@ -22,7 +22,7 @@
           (lambda ()
             (setq-local company-backends (copy-sequence company-backends))
             (add-to-list 'company-backends
-                         '(company-irony))
+                         '(company-semantic company-dabbrev-code))
             ))
 
 (add-hook 'rust-mode-hook
@@ -30,4 +30,11 @@
             (setq-local company-backends (copy-sequence company-backends))
             (add-to-list 'company-backends
                          '(company-racer))
+            ))
+
+(add-hook 'go-mode-hook
+          (lambda ()
+            (setq-local company-backends (copy-sequence company-backends))
+            (add-to-list 'company-backends
+                         '(company-dabbrev-code))
             ))

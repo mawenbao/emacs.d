@@ -25,10 +25,10 @@
 (add-to-list 'auto-mode-alist '("\\.qtpl\\'" . web-mode))
 
 ;; golang
-(add-hook 'go-mode-hook 'auto-complete-mode)
+(require 'setup-golang)
 
 ;; python
-(add-hook 'python-mode-hook 'jedi:setup)
+;; (add-hook 'python-mode-hook 'jedi:setup)
 ;;(setq jedi:complete-on-dot t)
 
 ;; open .h files with c++-mode

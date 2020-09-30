@@ -17,3 +17,4 @@ ede-projects.el
 *.pyc
 *.swp
 .python-environments/
+.lsp-session*

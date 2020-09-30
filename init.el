@@ -31,6 +31,9 @@
 ;; make frame full-screen on startup
 (custom-set-variables '(initial-frame-alist '((fullscreen . maximized))))
 
+;; affects cursor
+(setq w32-use-visible-system-caret nil)
+
 ;; set load path
 (let* ((my-site-lisp-dir (concat user-emacs-directory "site-lisp/"))
        (default-directory my-site-lisp-dir))

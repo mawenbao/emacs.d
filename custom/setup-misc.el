@@ -73,6 +73,7 @@
 (set-language-environment "UTF-8")
 (prefer-coding-system 'utf-8)
 (delete-selection-mode)
+(setq-default buffer-file-coding-system 'utf-8-unix)
 
 (when (boundp 'w32-pipe-read-delay)
   (setq w32-pipe-read-delay 0))
