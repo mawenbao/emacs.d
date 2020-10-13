@@ -7,8 +7,7 @@
 (require 'setup-golden-ratio)
 (require 'setup-helm)
 ;; (require 'setup-ggtags)
-(require 'setup-helm-gtags)
-(require 'setup-cedet)
+;; (require 'setup-helm-gtags)
 (require 'setup-projectile)
 (require 'setup-yasnippet)
 (require 'setup-company)
@@ -65,8 +64,10 @@
 ;; package web-mode
 (setq web-mode-auto-quote-style 2)
 
-
 ;; rust auto completion
 (require 'setup-racer)
 
 (require 'setup-irony)
+
+(require 'setup-ccls)
+;; (require 'setup-cedet)
