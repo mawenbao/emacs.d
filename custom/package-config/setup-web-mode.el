@@ -7,6 +7,7 @@
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
 
 (defun my-web-mode-hook ()
   "Hooks for Web mode."

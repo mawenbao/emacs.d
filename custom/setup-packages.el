@@ -16,6 +16,7 @@
 ;; (require 'setup-session)
 (require 'setup-saveplace)
 (require 'setup-web-mode)
+(require 'setup-tide)
 
 ;; (require 'bookmark+)
 (setq diredp-hide-details-initially-flag nil)

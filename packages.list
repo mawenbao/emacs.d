@@ -39,8 +39,6 @@ jedi
 jedi-core
 js2-mode
 lsp-mode
-lsp-mode
-lsp-ui
 lsp-ui
 lv
 markdown-mode

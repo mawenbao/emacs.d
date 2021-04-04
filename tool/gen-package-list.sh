@@ -18,5 +18,6 @@ find elpa -maxdepth 1 -type d |
     grep -v '^archives$' |
     rev |
     cut -d '-' -f 2- |
-    rev > packages.list
+    rev |
+    uniq > packages.list
 
