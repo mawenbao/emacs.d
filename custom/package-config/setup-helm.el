@@ -1,4 +1,4 @@
-(require 'helm-config)
+;(require 'helm-config)
 (require 'helm-grep)
 (require 'helm-xref)
 

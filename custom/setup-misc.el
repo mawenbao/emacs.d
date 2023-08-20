@@ -5,7 +5,7 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (column-number-mode t)
-(global-linum-mode t)
+(global-display-line-numbers-mode 1)
 (global-font-lock-mode t)
 (transient-mark-mode t)
 

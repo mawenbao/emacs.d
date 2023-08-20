@@ -10,7 +10,6 @@ company
 company-c-headers
 company-go
 company-irony
-company-lsp
 company-racer
 concurrent
 ctable
