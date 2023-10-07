@@ -66,7 +66,7 @@
 (setq web-mode-auto-quote-style 2)
 
 ;; rust auto completion
-(require 'setup-racer)
+;; (require 'setup-racer)
 
 (require 'setup-irony)
 

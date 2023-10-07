@@ -1,7 +1,7 @@
 anzu
 async
 auto-complete
-bind-key
+cargo-mode
 ccls
 clean-aindent-mode
 cmake-mode
@@ -22,6 +22,7 @@ epc
 epl
 f
 flycheck
+flycheck-rust
 go-eldoc
 golden-ratio
 go-mode
@@ -47,8 +48,10 @@ popup
 pos-tip
 pug-mode
 python-environment
+queue
 racer
 rjsx-mode
+rustic
 rust-mode
 rust-playground
 s
@@ -59,10 +62,11 @@ spinner
 tide
 typescript-mode
 undo-tree
-use-package
 volatile-highlights
 web-mode
+wfnames
 ws-butler
+xterm-color
 yaml-mode
 yasnippet
 zenburn-theme
