@@ -3,6 +3,7 @@
 /elpa/
 /session.*
 /irony
+/undo
 backup.d/
 save.d/
 semanticdb/

@@ -17,6 +17,7 @@
 (require 'setup-saveplace)
 (require 'setup-web-mode)
 (require 'setup-tide)
+(require 'setup-rust)
 
 ;; (require 'bookmark+)
 (setq diredp-hide-details-initially-flag nil)
@@ -48,8 +49,7 @@
 (add-hook 'text-mode 'ws-butler-mode)
 (add-hook 'fundamental-mode 'ws-butler-mode)
 
-(require 'undo-tree)
-(global-undo-tree-mode)
+(require 'setup-undo-tree)
 
 ;; package anzu
 (require 'anzu)
