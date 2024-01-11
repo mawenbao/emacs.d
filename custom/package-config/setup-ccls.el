@@ -1,5 +1,7 @@
 (provide 'setup-ccls)
 
+(setq lsp-clients-clangd-executable "D:\\app\\scoop\\apps\\msys2\\2023-07-18\\clang64\\bin\\clangd.exe")
+
 (use-package lsp-mode :commands lsp)
 (use-package lsp-ui :commands lsp-ui-mode)
 ;(use-package company-lsp :commands company-lsp)
